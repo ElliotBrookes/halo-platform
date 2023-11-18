@@ -12,3 +12,8 @@ Initial thoughts:
 - Must have ways for providing outreach and navigation to payments should be optimised for as few pain points as possible
 - HMust have features that will incentivise the use of the platform (Could be done by having leaderboards for payments, or have point values that can increase based on verified volunteer work etc.)
 - The incentives must be incentives due to social standing probably, in terms of making it integrate seamlessly with professional websites like LinkedIn and Github, Indeed and Reed as well as the major social media platforms.
+
+## Design Notes:
+
+- Each router will be returned from an init function in the relevant port file, this allows for middleware to be inserted/ used per router or group router
+- Dependancies will all go in one direction, based on the exposed types and interfaces defined by the Domain and Application code
